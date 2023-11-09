@@ -49,6 +49,7 @@ def generate_itemized_bill(item_cart):
     for item in item_cart:
         print("{:<30} {:<10} ${:<10.2f}".format(item['Item Name'], item['quantity'], item['Total Cost']))
     print("-" * 50)
+    print("total bill :",total_bill)
 
 
 # Function to write the itemized bill to a file
